@@ -8,7 +8,7 @@ How many references are made to the same object.
 
 For example 
 
-```
+```C#
 Car myCar = new Car(); // One reference
 
 Car myCarAgain = myCar; // Now we have to references to the same object
