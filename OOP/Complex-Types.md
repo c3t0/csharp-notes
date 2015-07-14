@@ -51,4 +51,32 @@ will create backing variable variable that will store Name
 
 Protected for raising events  bacuse you cant raise and event on a base but you can call a method that does that for you in the base.
 
-## Void does not return any number
+### Void 
+
+does not return any number
+
+
+## Two things that class can do 
+
+1) Hold data in a property & do something with a Method
+2) Raise an Event
+
+## Event
+
+Declared with a keyword *event*
+
+needs an *EventHandler* which is the method that will handle the event.
+
+Event is the way for a class or object it talks back to me
+
+*EventHandler<Type Event Arguments>*
+
+
+For events if a event is raisen in a forrest but nobody is listening it is null
+
+
+The class needs to subscribe to the event in order to listen.
+
+and * event is a list of methods that needs to be raised back*
+
+Subscription dog.HasSpoken += dog_HasSpoken
