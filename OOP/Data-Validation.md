@@ -75,5 +75,22 @@ But it will be the same if the file is unchanged.
 
 ```
 
-## Symmetric Encryption vs Asymetric encryption
+## Symmetric Encryption
 
+Same key to encrytp and decrypt
+
+AES & Rijndel (reindel)
+
+
+## Asymetric or Public Key Encryption
+
+one key for encryption
+one key for decryption
+
+used in Digital signatures
+
+4 asymmetric algorithms
+DSA
+ECDiffieHellman
+ECDsa
+RSA(most popular)
