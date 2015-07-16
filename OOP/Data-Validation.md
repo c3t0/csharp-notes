@@ -47,7 +47,7 @@ further
 
             if (cat == dog)
                 throw new Exception("Not the same");
-
+// could be used to check specific properties
             if (cat.Equals(dog)) ;
             throw new Exception("Not equal");
 
