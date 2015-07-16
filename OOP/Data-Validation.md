@@ -74,3 +74,6 @@ But it will be the same if the file is unchanged.
             }
 
 ```
+
+## Symmetric Encryption vs Asymetric encryption
+
