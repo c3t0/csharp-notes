@@ -4,6 +4,8 @@ Compiler does NOT validate objects value
 
 Debu / Trace Assert(0 methods aler developer
 
+Should be the "exception" not the "norm"
+
 ## Raise an Exception
 
 ```C#
