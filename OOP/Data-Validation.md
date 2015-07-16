@@ -52,3 +52,25 @@ further
             throw new Exception("Not equal");
 
 ````
+
+
+## Hash
+
+Not guaranteed to be unique. 
+
+But it will be the same if the file is unchanged.
+
+```C#
+            var storedPasswordHash = new byte[]
+            {
+                //num num num
+            };
+
+            var passwordHash = SH256.Create().ComputeHash(password);
+
+            if (passwordHash.SequenceEqual(storedPasswordHash))
+            {
+                Console.WriteLine("Password Match!");
+            }
+
+```
