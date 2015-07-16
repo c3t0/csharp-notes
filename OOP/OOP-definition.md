@@ -105,6 +105,35 @@ However when you cast the object into a base it will maintain the overriden beha
 
 ## C# productivity
 
+*var* is used for implicitly typing a local variable 
+
+Declare + Initialize a variable in one step.
+If the compiler can infer the type from the initialization expression then you can use *var*
+
+```C#
+   var x = "hello";
+            var y = new System.Text.StringBuilder();
+            var z = (float)Math.PI;
+
+            // precisely equivalent to 
+
+            string x = "hello";
+            System.Text.StringBuilder y = new System.Text.StringBuilder();
+            float z = (float)Math.PI;
+
+            // when you cannot deduce by looking at the declaration
+            // you decrease readablilty
+
+            Random r = new Random();
+            var x = r.Next();
+
+            //Here we would need to go find what the declaration of the Random variable
+```
+
+
+
+Chapter 2 pg 46
+
 - var before you had to declare the object explicitly
 - JS var means something different
 - LINQ - language 
