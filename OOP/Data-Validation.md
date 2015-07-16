@@ -35,3 +35,20 @@ examples
         }
 
 ```
+further 
+
+```C#
+
+            Animal cat = new Cat();
+            Animal dog = new Dog();
+
+            if (car is Dog)
+                throw new NotSupportedException("Dogs only!");
+
+            if (cat == dog)
+                throw new Exception("Not the same");
+
+            if (cat.Equals(dog)) ;
+            throw new Exception("Not equal");
+
+````
