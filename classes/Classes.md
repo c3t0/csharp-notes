@@ -1,6 +1,11 @@
-# dotNET Classes
+# Classes
 
-After C# syntaz
+Blue Print of an object or template
+
+Represents a *Reference Type*
+
+vs Struct => value type
+After C# syntax
 
 Base class library
 
