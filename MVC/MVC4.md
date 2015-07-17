@@ -14,9 +14,19 @@ namespace MvcApplication2.Controllers //notice the dot Constrollers
 
         public ActionResult Index() //Method that invokes class index
         {
-            return View(); // the view returned
+            return View(); // Right click to add View
         }
 
     }
 }
+```
+
+Adding view opens *Index.cshtml*
+
+```C#
+@{
+    ViewBag.Title = "Index"; //ViewBag class?
+}
+
+<h2>Index</h2>
 ```
