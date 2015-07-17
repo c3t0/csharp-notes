@@ -73,6 +73,25 @@ public ActionResult Action()
         }
         
 ```
-        
+
+Notice that URL will be the name of the Controller  without the Controller part
+Then will be the name of whatever methods/action you wish to take.
+
+This will send you to the View of the same name.
+
+The router will be searching for the View of the same name as the controller + the following directories
+* ~/Views/Home
+* ~/Views/Shared
+
+and any of the following extensions
+* .aspx
+* .ascx
+* .cshtml
+* .vbhtml
+
+
+ViewBag is a container
+a dynamic object you can create your property on the fly
+Whatever you want to send to the view you can toss in there
 
 
