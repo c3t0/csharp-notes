@@ -53,10 +53,26 @@ namespace MvcApplication2
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                url: "{controller}/{action}/{id}",  // controller action ID if there is no ID
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                // if no controller default is HOME if no action default is INDEX
             );
         }
     }
 }
 ```
+
+Go to HomeController.cs
+type mvcaction4 tab tab
+
+```C#
+
+public ActionResult Action()
+        {
+            return View();
+        }
+        
+```
+        
+
+
