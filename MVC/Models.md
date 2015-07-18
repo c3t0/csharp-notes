@@ -95,3 +95,24 @@ namespace Conference.Models
 }
 
 ```
+
+Why Dispaly as attribute instead of typing it into the view
+
+Validation 
+It lives with the model instead of harcoding it into the site
+
+```C#
+
+    [MetadataType(typeof(SpeakerMetadata))]
+    public partial class Speaker
+    {
+
+    }
+
+    public class SpeakerMetadata
+    {
+        [Required()]
+        public Object Name { get; set; }
+    }
+
+```
