@@ -1,6 +1,6 @@
 # Views
 
-```C#.cshtml
+```C#
 @*Some more Razor examples*@
 
 <span>Price including Sale Tax: @Model.Price * 1.2</span>>
