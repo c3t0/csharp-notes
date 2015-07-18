@@ -7,7 +7,7 @@
             public byte[] PhotoFile { get; set; }
             public string Description { get; set; }
             public DateTime CreateDate { get; set; }
-            public virtual List<Comment> Comments { get; set; } // notice the VIRTUAL
+            public virtual List<Comment> Comments { get; set; } // notice the VIRTUAL  = lazy Loading
             // This is a relationship to a 0..* Comments
         }
 
@@ -150,10 +150,15 @@ namespace Conference.Models
         [DataType(DataType.EmailAddress)]
         public String EmailAddress { get; set; }
 
-        public virtual List<Session> Sessions { get; set; }
+        public virtual List<Session> Sessions { get; set; } // VIRUTAL = lazy Loading
     }
 
 
 }
 
 ```
+
+## Entity Framework
+
+ID or ClassID are used as the primary key
+Virtual = Lazy loading
