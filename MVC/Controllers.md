@@ -258,3 +258,11 @@ namespace Conference
 }
 ```
 
+That filer is living in the **~/Filters** directory
+
+e/g require SSL in the entire website
+
+```C#
+            filters.Add(new RequireHttpsAttribute());
+
+```
