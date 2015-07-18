@@ -217,6 +217,94 @@ namespace Conference.Controllers
 
 For the FORM
 
+```C#
+using Conference.Models; // this is the models namespace for your project Conference
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace Conference.Controllers
+{
+    public class SessionController : Controller
+    {
+        //
+        // GET: /Session/
+
+        public ActionResult Index() //Index is the name of the acction
+            // also the name of the View that return will be looking for if no View is specified
+        {
+            ConferenceContext context = new ConferenceContext();
+            List<Session> sessions = context.Sessions.ToList();
+
+            return View("Index", sessions);
+        }
+
+        // a web form needs two steps
+        // 1) send the form in a View
+        // 2) received the filled form and process it
+
+        //Step 1 of Form
+
+        [HttpPost()] //GET: Session/Create -- not sure this is needed since signatures are different.
+        public ActionResult Create() // a form in a View called create for you to fill
+        {
+            return View() // nothing here because I only want to make sure that we return the form
+                // empty will return a View called "Create" with the form in it.
+        }
+
+        //Step 2 of Form
+
+        [HttpPost()] //POST: Session/Create  -- not sure this is needed since signatures are different
+        public ActionResult Create(Session session) //this will have a brand new session.
+            // (Session session) this is model binding
+        {
+            // we add this at the end
+            // the "if" statment is to validate data
+            if (!ModelState.IsValid) // look for .IsValid on MSDN website
+            {
+                return View(session); // since not-valid then return the "session" that contains the bad data
+            }
+            try { 
+            ConferenceContext context = new ConferenceContext(); //we create a new object of tyep ConferenceContext
+            //ConferenceContext has to objects Sessions + Speakers
+            //Sessions AND speakers have several Properties
+            //e.g. [SessionID, Title, Abstract, SpeakerID, Speaker]
+
+            context.Sessions.Add(session); //we only receive one parameter "session"
+            //session object is what we add
+
+            context.SaveChanges(); // important
+                }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("Error", ex.Message);
+                return View(Session);
+            }
+            //we add this so that the user receives some sort of message acknowledging the action taken
+            TempData["Message"] = "Created " + session.Title;
+
+
+            // we need to return a View
+            // could be "Index" or maybe someother view different than "Create"
+
+            return RedirectToAction("Index"); // this takes you back to the full list
+        
+            // but we get no notification so we use TempData above the return statement
+        }
+
+        // so an action of the same name will perform differently
+        //this is an overloaded method
+        //If no parameters then return empty form
+        //if parameters are sent aka you have session object filled with form info
+        // then process parameter to database
+
+    }
+}
+
+```
+
 ## Filters
 
 Allow us to change the behavior of the action.
