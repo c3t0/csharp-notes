@@ -110,6 +110,7 @@ You can create a separate class for metadata specifying the name of each object 
 
 Then reference as MetadataType on top of the partial class as pass the name of you metadata class.
 
+Also called a **buddy class**
 ```C#
 
     [MetadataType(typeof(SpeakerMetadata))]
