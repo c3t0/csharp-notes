@@ -73,13 +73,23 @@ using parameters
 http://www.advendureworks.com/session/getsessionbytitle?title=MVC101
 // default model binder ?title=MVC101
 
+//below we are returning ActionResult
+//labeled "public"
+//Our method name is "GetSessionByTitle
+//The parameter here is (string title)
+
         public ActionResult GetSessionByTitle(string title)
+        //down blew we are doing "stuff"
         {
             var query = from s in context.Sessions
                         where s.Title == title
                         select s
                 Photo session = query.FirstOrDefault();
-                return View("Details", session);
+                return View("Details", session); // This is the helper methods return View
+                // it fetches the View that matches the method name "GetSessonByTitle"
+                //in this case we specified the View named "Details"
+                //The second parameter is the object that we loaded "session"
+                //the object "session" is what is passed to the View called "Details"
         }
 
 
@@ -90,3 +100,7 @@ http://www.advendureworks.com/session/getsessionbytitle?title=MVC101
 ### insert code to perform operation and **return** the result
 
 
+### Repository
+When implementing a repository for production 
+
+GetseSessionByTitle would be retrieve by ID from repo
