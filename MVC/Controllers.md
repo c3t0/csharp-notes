@@ -104,3 +104,18 @@ http://www.advendureworks.com/session/getsessionbytitle?title=MVC101
 When implementing a repository for production 
 
 GetseSessionByTitle would be retrieve by ID from repo
+
+
+## Passing data to View
+
+1. *Model*
+2. ViewBag
+3. TempData
+
+* Model -> View("data")
+    - strongly typed
+    - more complex
+* ViewBag is dynamic and only for that action.
+    - Alias for view data
+    - perfect for sending messages to the view
+* TempData also available on the next page
