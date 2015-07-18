@@ -65,6 +65,8 @@ MVC Model Binders will provide dump that data into parameters that match my clas
 
 parameter enter
 
+remember to enter
+*using System.ComponentModel.DataAnnotations;*
 ```C# 
 
 Add class
