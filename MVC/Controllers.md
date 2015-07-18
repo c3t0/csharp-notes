@@ -266,3 +266,21 @@ e/g require SSL in the entire website
             filters.Add(new RequireHttpsAttribute());
 
 ```
+
+## ViewModel
+
+Checking out from teh store
+Total 
+products
+user info 
+your models do not have to map to a database
+list of products
+user
+a message
+**different than a MVVM**
+a **View specific Model** its only used to **bundle up information and pass it to the View**
+
+Shopping cart information e.g. does not have to go back to a database
+
+ShoppingCarViewModel
+
