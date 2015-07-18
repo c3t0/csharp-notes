@@ -48,3 +48,47 @@ This is performed through attributes
        }
 
 `````
+
+Google *datatype emailaddress msdn*
+
+This will take you to the library documentation
+
+Rooute data 
+Query string
+Inside the filled form
+
+Model Binders are the ones that connect data
+
+I do not have to connect the fields
+
+MVC Model Binders will provide dump that data into parameters that match my class
+
+parameter enter
+
+```C# 
+
+Add class
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Conference.Models
+{
+    public class Session
+    {
+        public Int32 SessionID { get; set; }
+
+        public String Title { get; set; }
+
+        public String Abstract { get; set; }
+
+        public Int32 SpeakerID { get; set; }
+
+        public Speaker // create the class with Control + " . "
+
+    }
+}
+
+```
