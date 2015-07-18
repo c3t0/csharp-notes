@@ -21,7 +21,7 @@ So we need a mechanism to create an instance of that **controller** and go find 
 
 Writing an action for a Controller includes
 * Create **public method**
-* Return a class that derives from **ActionResult**
+* Return a class that derives from **ActionResult** method
 * Add **parameters** to the method
 * insert code to perform operation and **return** the result
 
@@ -66,4 +66,27 @@ public class HomeController : Controller
 
 ### Add **parameters** to the method
 
+using parameters
+
+```C#
+
+http://www.advendureworks.com/session/getsessionbytitle?title=MVC101
+// default model binder ?title=MVC101
+
+        public ActionResult GetSessionByTitle(string title)
+        {
+            var query = from s in context.Sessions
+                        where s.Title == title
+                        select s
+                Photo session = query.FirstOrDefault();
+                return View("Details", session);
+        }
+
+
+
+``` 
+
+
 ### insert code to perform operation and **return** the result
+
+
