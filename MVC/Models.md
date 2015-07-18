@@ -101,6 +101,15 @@ Why Dispaly as attribute instead of typing it into the view
 Validation 
 It lives with the model instead of harcoding it into the site
 
+
+## Metadata for Patial Class
+
+if the class was generated from SQL then you would have a partial class
+
+You can create a separate class for metadata specifying the name of each object with the attributes above it.
+
+Then reference as MetadataType on top of the partial class as pass the name of you metadata class.
+
 ```C#
 
     [MetadataType(typeof(SpeakerMetadata))]
