@@ -107,10 +107,10 @@ GetseSessionByTitle would be retrieve by ID from repo
 
 
 ## Passing data to View
-
-1. *Model*
-2. ViewBag
-3. TempData
+http://rachelappel.com/when-to-use-viewbag-viewdata-or-tempdata-in-asp.net-mvc-3-applications
+1. **Model** ViewData
+2. **ViewBag**
+3. **TempData**
 
 * Model -> View("data")
     - strongly typed
@@ -119,3 +119,33 @@ GetseSessionByTitle would be retrieve by ID from repo
     - Alias for view data
     - perfect for sending messages to the view
 * TempData also available on the next page
+
+
+```C#
+using Conference.Models; // this is the models namespace for your project Conference
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace Conference.Controllers
+{
+    public class SessionController : Controller
+    {
+        //
+        // GET: /Session/
+
+        public ActionResult Index() //Index is the name of the acction
+            // also the name of the View that return will be looking for if no View is specified
+        {
+            ConferenceContext context = new ConferenceContext();
+            List<Session> sessions = context.Sessions.ToList();
+
+            return View("Index", sessions);
+        }
+
+    }
+}
+
+```
