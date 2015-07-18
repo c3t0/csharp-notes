@@ -59,7 +59,7 @@ When the View is created through the Controller scaffolding
 
 Delivering a **strongly typed** model object into the Index.cshtml view
 
-```C#
+```html
 @model IEnumerable<Conference.Models.Speaker>
 
 @{
