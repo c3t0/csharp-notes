@@ -12,3 +12,22 @@
         }
 
 ```
+
+Model should provide metadata so that it is centralized.
+
+This is performed through attributes 
+
+```C# 
+
+        public class Photo
+        {
+            [DisplayName("Picture")]
+            public byte[] PhotoFile { get; set; }
+
+            [DataType(DataType.DateTime)]
+            [DisplayName("Create Date")]
+            [DisplayFormat(DataFormatString = "{0:dd/MM/yy}")]
+            public DateTime CreateDate { get; set; }
+        }
+
+}
