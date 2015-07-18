@@ -326,6 +326,10 @@ unsurprisingly they are **attributes** to the class or the action method
 
 ```C#
 [Authorize(Roles = "Administrators")]
+public ActionResult Create()
+{
+return View();
+}
 ````
 Global setting are configured in 
 ###~/App_Start/FilerConfig.cs
