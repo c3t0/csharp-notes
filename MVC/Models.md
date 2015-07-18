@@ -126,3 +126,34 @@ Also called a **buddy class**
     }
 
 ```
+
+Now review the second class that was generated with control + . then added parameters
+
+```C#
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+
+namespace Conference.Models
+{
+    public class Speaker // remember to add "public"
+    {
+        public Int32 SpeakerID { get; set; }
+
+        [Required(ErrorMessage = "{0} is required")] // the {0} will display the value of Name
+        [Display(Name = "Speaker")]
+        public String Name { get; set; }
+
+        [DataType(DataType.EmailAddress)]
+        public String EmailAddress { get; set; }
+
+        public virtual List<Session> Sessions { get; set; }
+    }
+
+
+}
+
+```
