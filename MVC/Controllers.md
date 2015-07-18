@@ -212,3 +212,24 @@ namespace Conference.Controllers
         // then process parameter to database
 
 ```
+
+## TRY & CATCH
+
+For the FORM
+
+## Filters
+
+Allow us to change the behavior of the action.
+
+* Authorization
+* Logging
+* Caching
+
+Four types
+
+1. Authorization
+2. Action
+3. Result
+4. Exception
+
+Based on route and it will change
