@@ -17,3 +17,14 @@
 }
 
 ```
+
+when we add model
+
+```C#
+
+@model IEnumerable<MyWebsite.Models.Product>
+<h1>Product Catalog</h1>
+@foreach(var Product in Model)
+{
+<div>Name: @Product.Name</div>
+}
