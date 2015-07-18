@@ -233,3 +233,28 @@ Four types
 4. Exception
 
 Based on route and it will change
+
+unsurprisingly they are **attributes** to the class or the action method
+
+```C#
+[Authorize(Roles = "Administrators")]
+````
+Global setting are configured in 
+###~/App_Start/FilerConfig.cs
+
+```C#
+using System.Web;
+using System.Web.Mvc;
+
+namespace Conference
+{
+    public class FilterConfig
+    {
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
+            filters.Add(new HandleErrorAttribute());
+        }
+    }
+}
+```
+
