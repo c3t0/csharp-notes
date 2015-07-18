@@ -56,3 +56,14 @@ namespace MvcApplication2.Controllers
 }
 
 ```
+### Create **public method**
+
+```C#
+public class HomeController : Controller
+```
+
+### Return a class that derives from **ActionResult**
+
+### Add **parameters** to the method
+
+### insert code to perform operation and **return** the result
