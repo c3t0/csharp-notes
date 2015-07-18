@@ -22,7 +22,7 @@ when we add model
 
 ```C#
 
-@model IEnumerable<MyWebsite.Models.Product>
+@model IEnumerable<MyWebsite.Models.Product> <-- this is where I list the object model-->
 <h1>Product Catalog</h1>
 @foreach(var Product in Model)
 {
