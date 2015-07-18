@@ -31,3 +31,20 @@ This is performed through attributes
         }
 
 }
+
+       public class Person
+       {
+           public int PersonID { get; set; }
+
+           [Required(ErrorMessage = "Pleae enter a name.")]
+           public string Name { get; set; }
+
+           [Range(0, 400)]
+           public int Height { get; set; }
+
+           [Required]
+           [DataType(DataType.EmailAddress)]
+           public string EmailAddress { get; set; }
+       }
+
+`````
