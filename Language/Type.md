@@ -34,11 +34,11 @@ namespace ConsoleApplication2
         public class UnitConverter
         {
             int ratio; // data member is the  "field" called ratio
-            public UnitConverter (int unitRatio) // Function Member -> "UnitConverter" Constructor 
+            public UnitConverter (int unitRatio) // Function Member is a "UnitConverter" Constructor 
             {
                 ratio = unitRatio;
             }
-            public int Convert (int unit) //Function Member -> "COnvert"  Method
+            public int Convert (int unit) //Function Member is a "COnvert"  Method
             {
                 return unit * ratio;
             }
