@@ -9,7 +9,7 @@ returnType methodName (parmeterList)
 }
 ```
 
-## returnType or void
+### returnType or void
 
 Specified the information that the **method returns**
 
@@ -17,7 +17,7 @@ If the method **does not return** a value:
 
 use the keyword **void** instead of the **returnType**
 
-## methodName
+### methodName
 
 named used to call the method
 
@@ -25,7 +25,7 @@ Follwos the same identifier rules.
 
 cameCase
 
-## parameterList
+### parameterList
 
 Optional
 
@@ -40,6 +40,28 @@ More than one are separated by commas.
 there are **no global methods**
 
 **All methods are inside a class**
+
+#### Declaration Example
+
+The method called "addValues" retuns a type int and takes two parameters leftHandSide and rightHandSide.
+Both parameters are type int.
+
+```C#
+int addValues (int leftHandSide, int rightHandSide)
+{
+//method body statements go here
+}
+```
+
+The method showResult **does not** return a vale. 
+It takes one parameter named answer of type int.
+```C#
+void showResult (int answer)
+{
+//method body statements go here
+}
+```
+
 
 ## Parameters
 
