@@ -55,10 +55,15 @@ namespace ConsoleApplication2
 
 ## Constructor
 
-A constructor is a method 
+A constructor is a method.
+
+
 A **special method** that is being **called upon "construction" of the class.**
-It has the **same name as the class itself**
+
+It has the **same name as the class itself**.
+
 The purpose of the constructor is to initialize all member variables when an object of this class is created. 
+
 **Any resources** acquired such as memory or open files are typically **released in the class constructor**.
 
 A constructor is intended to be used for wiring. 
