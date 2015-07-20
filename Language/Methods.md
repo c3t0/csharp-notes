@@ -1,5 +1,13 @@
+#Methods
 
+## Declaration Syntax
 
+```C#
+returnType methodName (parmeterList)
+{
+// metod body statements;
+}
+```
 ## Parameter
 
 Is the varaible in a method definition.
