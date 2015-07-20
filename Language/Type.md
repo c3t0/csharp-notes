@@ -5,6 +5,30 @@ Blueprint of a value
 All values are **intances of a type**
 
 The set of possible alues a variable can be are determined by the type
+
+## new Keyword
+
+creates instances of a **custom type**
+
+Immediately after the **new** operator instantiates an object...
+
+The objects **contructor** is called to perform initialization.
+
+Hence by definition **new** is:
+Used to create objects and invoke constructors
+
+Also used to create instances of anonymous types 
+
+to invoke the default constructor for the value types.
+
+int i = new int()
+
+It is an error to declare a default constructor for a [struct](struct.md)
+
+the **new** operator **cannot be overloaded**
+
+
+
 ## Custom Type
 ```C#
 using System;
