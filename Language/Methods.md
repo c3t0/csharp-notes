@@ -41,7 +41,7 @@ there are **no global methods**
 
 **All methods are inside a class**
 
-#### Declaration Example
+**Declaration Example**
 
 The method called "addValues" retuns a type int and takes two parameters leftHandSide and rightHandSide.
 Both parameters are type int.
@@ -62,6 +62,13 @@ void showResult (int answer)
 }
 ```
 
+## Return statement
+
+When return type is **not void** you **must** include a **return** statement
+
+return keyword + expression specifying the returned value + ; semicolon
+
+Type must be the same as the type specified in the method declaration.
 
 ## Parameters
 
