@@ -8,7 +8,11 @@ returnType methodName (parmeterList)
 // metod body statements;
 }
 ```
-## Parameter
+
+
+
+
+## Parameters
 
 Is the varaible in a method definition.
 
@@ -21,8 +25,10 @@ public void MyMethod(string myParam)
 
 ```
 
-When a method is called, the arguments are the data passed to the methods parameters
+**Arguments** are the **data passed** to the methods **parameters**
 
+
+When a method is called, 
 ```C#
 string myArg1 = "This is my argument";
 myClass.MyMethod(myArb1);
