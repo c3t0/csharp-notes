@@ -7,6 +7,13 @@ returnType methodName (parmeterList)
 {
 // metod body statements;
 }
+
+// aka
+
+returnType methodName ()
+{
+// body
+}
 ```
 
 ### returnType or void
