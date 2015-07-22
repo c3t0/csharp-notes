@@ -35,3 +35,17 @@ class Example
 }
 ````
 
+All enums have to be scope d by their enumeration type
+
+you have to write **Season.Fall**
+
+Different enums can have literals  of the same name.
+
+```C#
+
+Season colorgul = Season.Fall;
+
+Console.WriteLine(colorful); // writes out 'Fall'
+
+```
+
