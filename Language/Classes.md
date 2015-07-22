@@ -35,7 +35,7 @@ Use the **class** keyword to define a new class
 
 Followed by the name used to refer to that class.
 
-*vis-a-vis method does not use a **method** keyword in the declaration.*
+*vis-a-vis method does not use a 'method' keyword in the declaration.*
 
 Methods & Fields(Data) go between the braces.
 
