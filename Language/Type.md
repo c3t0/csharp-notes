@@ -25,6 +25,14 @@ int i = new int()
 
 It is an error to declare a default constructor for a [struct](struct.md)
 
+
+## Value Types
+
+1. [Enumerations](Enumerations.md)
+2. [Structures](Structures.md)
+
+
+
 the **new** operator **cannot be overloaded**
 
 
