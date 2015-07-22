@@ -35,6 +35,19 @@ Use the **class** keyword to define a new class
 
 Followed by the name used to refer to that class.
 
+```C#
+class Circle
+        {
+            int radius;
+
+            double Area()
+            {
+                return Math.PI * radius * radius;
+            }
+        }
+
+```
+
 *vis-a-vis method does not use a 'method' keyword in the declaration.*
 
 Methods & Fields(Data) go between the braces.
@@ -47,9 +60,22 @@ You can use a class similar to using other types
 
 The keyword **new** is necessary to declare a **variable of class type**
 
+*What is the Circle equivalent of 42?*
+
 C# does not provide the syntax for assigning literal class values 
 
+Memory of variable sof class types is allocated differently than literal class values
 
+See Values ad References
+
+You can assign an intance of a class to another variable of the same type
+
+```C#
+Circle c;
+c = new Circle();
+Circle d;
+d = c;
+```
 
 After C# syntax
 
