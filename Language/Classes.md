@@ -29,7 +29,7 @@ Encapsulation actually has two purposes:
 2. To control the accessibility of the methods and data; in other words, to control the use of the
 class
 
-## Syntax
+## Declaration Syntax
 
 Use the **class** keyword to define a new class
 
@@ -165,11 +165,76 @@ The CLR (runtime) must'
 2. fill it with the **fields** defined in the class
 3. perform **initialization** by invoking the **constructor**
 
+### Default contructor
+
+Does not take any parameters
+
+```C#
+public Circle()
+{
+//body
+}
+```
+
+IF you add parameters === **Overloaded Constructor**
+
+private constructor prevents you from being able to create objects that are not part of the class
+
+### Overloading Constructors
+
+Constructor just like any other method can be **overloaded**.
+
+So you can use the **default constructor** to generate **default initialization** if there is no input.
+
+You can write several version of the constructor depending on the **signature** aka parameters passed or provided.
+
+The compiler will determine which constructor to use depening on the signature and the parametes passed.
+
+IF you make your own constructor teh compiler **will not genreate a default constructor**.
+
+IF you **also want a default with no parameters** you need to write the constructor yourself.
 
 
+### Partial Classes
 
+When a class is separated in several files.
 
+Write different file names
 
+The class in the file should be the **same class name**
+
+**~/circ1.cs**
+
+```C#
+ partial Circle
+        {
+            public Circle() //default constructor
+            {
+                radius = 0;
+            }
+
+            public Circle (int initialRadius) //overloaded constructor
+            {
+                this.radius = intialRadius;
+
+            }       
+        }
+````
+
+**~/circ2.cs**
+
+```C#
+ partial Circle
+        {
+            private int radius;
+
+            public double Area()
+            {
+                return Math.PI * this.radius * this.radius;
+
+            }       
+        }
+````
 
 After C# syntax
 
