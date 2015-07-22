@@ -1,10 +1,31 @@
 # Classes
 
+Class is the root word of the term classification. When you design a class, you systematically arrange
+information and behavior into a meaningful entity.
+
 Blue Print of an object or template
 
 Represents a *Reference Type*
 
 vs Struct => value type
+
+## Encapsulation
+
+A program that uses a class should not have to worry how the class actually works internally.
+
+The program simply creates an instance of a class and calls the methods of that class.
+
+The program does not care about the implementation.
+
+The class might need to maintain all sorts of **internal state information** to perform its various methods.
+
+State information and activity are hidden from the program using a class.
+
+
+Encapsulation actually has two purposes:
+1) To combine methods and data within a class; in other words, to support classification
+2) To control the accessibility of the methods and data; in other words, to control the use of the
+class
 
 ## Syntax
 
@@ -34,12 +55,7 @@ Base class library
 
 
 
-## Encapsulation
 
-Encapsulation actually has two purposes:
-* To combine methods and data within a class; in other words, to support classification
-* To control the accessibility of the methods and data; in other words, to control the use of the
-class
 
 Inheritance
 
