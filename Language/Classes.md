@@ -23,8 +23,10 @@ State information and activity are hidden from the program using a class.
 
 
 Encapsulation actually has two purposes:
-1) To combine methods and data within a class; in other words, to support classification
-2) To control the accessibility of the methods and data; in other words, to control the use of the
+
+1. To combine methods and data within a class; in other words, to support classification
+
+2. To control the accessibility of the methods and data; in other words, to control the use of the
 class
 
 ## Syntax
