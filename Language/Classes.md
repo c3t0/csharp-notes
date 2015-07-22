@@ -77,6 +77,100 @@ Circle d;
 d = c;
 ```
 
+## Class Accessibility
+
+Classes form a boundary to the ouside world.
+
+The fields and methods are not available to the program.
+
+Methods and Fields:
+
+1. You need to **explicity** use the keyword **public**
+
+2. Use the keyword **private** when the intended behaviour of a method of field is to not be accessible to the program. 
+
+Keyword needs to be repeated with every field or method declaration.
+
+**public** accesssible to both within and outside of the class
+
+```C#
+
+        class Circle
+        {
+            private int radius;
+
+            public double Area()
+            {
+                return Math.PI * radius * radius;
+            }
+        }
+
+```
+
+Although "radius" is private "Area" is public and can see "radius"
+
+*How do we initialize radius?* we need a **contructor**
+
+### Naming Conventions
+
+Capital letter for All Classes.
+
+**constructor** MUST use Capital Letter because it need to have the same name.
+
+* Capital letter for **public** aka PascalCase
+
+* Lowercase letter for  **non-public** aka camelCase
+
+Sometimes:
+
+* camelCase for methods 
+* _underScore for **private**
+
+
+## Constuctors
+
+A **special method** that runs automativally when you create an instance of a class.
+
+it is a **methods that**
+
+1. Same name as class. Hence it is capitalized
+2. **cannot** return a value... not even "void"
+3. It must be in every class
+4. Must be public
+
+```C#
+        class Circle
+        {
+            private int radius;
+
+            public Circle()
+            {
+                radius = 0;
+            }
+
+            double Area()
+            {
+                return Math.PI * radius * radius;
+            }
+        }
+
+
+```
+ 
+when you use the **new** keyword to crate an object.
+
+The CLR (runtime) must'
+
+1. grab a piece of memory based on the class
+2. fill it with the **fields** defined in the class
+3. perform **initialization** by invoking the **constructor**
+
+
+
+
+
+
+
 After C# syntax
 
 Base class library
