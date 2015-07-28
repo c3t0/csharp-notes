@@ -32,7 +32,13 @@ It will be have **Context** appended to the name of the service
 
 **Scaffolding** will create the controllers as shown below
 
-**~/Controllers/AuthorsController.cs**
+##~/Controllers/AuthorsController.cs
+
+Defines the **Web API controller**
+
+This controller implements the **REST API**
+
+It is used by clients to perform **CRUD** on authors
 
 ``` C#
 
@@ -158,7 +164,20 @@ namespace BookServiceV3.Controllers
 
 ```
 
-**~/Models/BookServiceContext.cs**
+## ~/Models/BookServiceContext.cs
+
+During run time will manage the entity objects for the entire **BookServiceV3**
+
+This is within the namespace **BookServiceV3.Models**
+
+Populating objects with data from Database
+
+Change Tracking
+
+Persist data to the database
+
+Note that it inherits from **DbContext**
+
 
 ```C#
 using System;
