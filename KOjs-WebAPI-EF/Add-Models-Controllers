@@ -1,0 +1,11 @@
+Add **model classes** that define the **database entities**.
+
+Then you will add **Web API controllers** that perform **CRUD** operations on those **entities**.
+
+#Models
+
+
+create Plain Old Common Language Runtime Objects **POCOS**
+
+aka **Classes**
+
