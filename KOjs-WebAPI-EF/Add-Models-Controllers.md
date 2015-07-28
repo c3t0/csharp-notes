@@ -122,3 +122,5 @@ will be translated into the following SQL*:
 ```
 
 As you can see our relationship in c# has been converted into the equivalent SQL join.
+
+http://blog.staticvoid.co.nz/2012/7/17/entity_framework-navigation_property_basics_with_code_first
