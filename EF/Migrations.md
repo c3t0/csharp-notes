@@ -4,9 +4,29 @@
 
 Define your model using code
 
+```C#
+using System.Data.Entity;
+
+namespace Blogging
+
+public class Blogging
+    {
+        public class Blog
+        {
+            public int BlogId { get; set; }
+            public string Name { get; set; }
+
+            public class BloggingContext : DbContext
+            {
+                public DbSet<Blog> Blogs { get; set; }
+            }
+        }
+    }
+
+```
 ### > Add-Migration First 
 
-to scafforl a migration that will create the corresponsing schema in the database
+to scafforld a migration that will create the corresponsing schema in the database
 
 Calculate the model based on the code we wrote
 
@@ -36,7 +56,34 @@ It adds the C# migration code to the project
 
 **~/Migrations/First.resx**
 
-### > Update-Database command
+### > Update-Database 
 
 Once you have the scaffolded migration you can push these changes to the database using the **Update-Database** command.
 
+## Subsequent Migrations
+
+### Change to Model code
+
+Make a change to the model in code
+
+```C#
+using System.Data.Entity;
+
+namespace Blogging
+
+public class Blogging
+    {
+        public class Blog
+        {
+            public int BlogId { get; set; }
+            public string Name { get; set; }
+            public string Url { get; set; } // <= new attribute
+
+            public class BloggingContext : DbContext
+            {
+                public DbSet<Blog> Blogs { get; set; }
+            }
+        }
+    }
+
+```
