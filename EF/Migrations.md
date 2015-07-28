@@ -4,7 +4,7 @@
 
 Define your model using code
 
-### Add-Migration First 
+### > Add-Migration First 
 
 to scafforl a migration that will create the corresponsing schema in the database
 
@@ -36,7 +36,7 @@ It adds the C# migration code to the project
 
 **~/Migrations/First.resx**
 
-### Update-Database command
+### > Update-Database command
 
 Once you have the scaffolded migration you can push these changes to the database using the **Update-Database** command.
 
