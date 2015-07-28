@@ -24,7 +24,7 @@ public class Blogging
     }
 
 ```
-### > Add-Migration First 
+### PM> Add-Migration First 
 
 to scafforld a migration that will create the corresponsing schema in the database
 
@@ -56,13 +56,13 @@ It adds the C# migration code to the project
 
 **~/Migrations/First.resx**
 
-### > Update-Database 
+### PM> Update-Database 
 
 Once you have the scaffolded migration you can push these changes to the database using the **Update-Database** command.
 
 ## Subsequent Migrations
 
-### Change to Model code
+### Change the Model code
 
 Make a change to the model in code
 
@@ -87,3 +87,38 @@ public class Blogging
     }
 
 ```
+
+### PM> Add-Migration Second
+
+To scaffold the migration to a pply the corresponding changes to the database schema
+
+Break downs steps
+
+#### Calculate current Model
+
+Calculate the current Model based on the modified code
+
+Find the **previous model** embedded in the resource **~/Migrations/First.resx** file from the **last migration**
+
+#### EdmModelDiffer
+
+We pump **previous + current** model to **EdmModelDiffer**
+
+Which will calculate the required database changes
+
+
+#### MigrationCodeGenerator
+
+The changes are passed to the **MigrationCodeGenerator**
+
+Scaffold the correspongin migration into the project
+
+**~/Migrations/Second.cs**
+
+This also generates the ~/Migrations/Second.resx** resource file.
+
+The model is stored as a **snapshot** in the resource file
+
+### PM> Update-Database
+
+Pushes the changes to the database
