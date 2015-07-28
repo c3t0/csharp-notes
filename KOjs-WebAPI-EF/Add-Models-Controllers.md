@@ -68,7 +68,71 @@ The attributes of the entity in a DB are **Id** and **Name**
 
 The property attribute **[Required]** will help the controller know that the view needs to reflect that.
 
+### Books
 
+**AuthorId** defines the foreign key **Author** Class/Table/Entity
+
+Notice also the navigation property which establishes the relationship between the entities **Book** and **Author**
+```C#
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Web;
+
+namespace BookServiceV3.Models
+{
+    public class Books
+    {
+        public int Id
+        {
+            get;
+            set;
+        }
+
+        [Required]
+        public string Title
+        {
+            get;
+            set;
+        }
+
+        public int Year
+        {
+            get;
+            set;
+        }
+
+        public decimal Price
+        {
+            get;
+            set;
+        }
+
+        public string Genre
+        {
+            get;
+            set;
+        }
+
+        // To add a Foreign Key
+        // Use the Id for the Class Author
+        public int AuthorId
+        {
+            get;
+            set;
+        }
+
+        // Navigation Property represents the relationship with the class Author
+
+        public Author Author
+        {
+            get;
+            set;
+        }
+    }
+}
+```
 
 ## Navigation Properties
  Navigation properties allow you to define relationships between entities (rows in your database) in a way that makes sense in an object oriented language.
