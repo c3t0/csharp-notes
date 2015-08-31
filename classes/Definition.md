@@ -1,20 +1,19 @@
 # Classes
 ## Constructor
 
-The () after the class is the *method invocation operator*
+The **()** after the class is the **method invocation operator**
 
-Whenever you are creating a new instance of the class you are 
-calling a method whenver you are creating a new instance of this class
+You are calling a **method** whenver you are creating a new instance of this class
 
-is called a constructor. 
+This is called a **constructor**. 
 
 It allows you to write some code at the moment of instantiation.
 
-at the moment when a new istance of your class has been created.
+at the moment when a new instance of your class has been created.
 
 Constructors are used for many things but typically
 
-when a new object that you just created an instance of into a valid state.
+=> when a new object that you just created an instance of into a valid state.
 
 Meaning that you can use it to initialize the value of properties of the object.
 
